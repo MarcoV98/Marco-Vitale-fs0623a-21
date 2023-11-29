@@ -1,0 +1,48 @@
+@import "font";
+@import "colori";
+@import "spaziature";
+
+
+
+@mixin navItem {
+    font-size: $fontItem;
+    color: $colorText;
+    @extend .m-1rem;
+}
+
+@mixin titleBig {   
+    font-size: $fontLogo;
+    color: $colorLogo;
+}
+
+@mixin titleBigger {   
+    font-size: $fontBigger;
+    color: $colorLogo;
+    padding-bottom: 1rem;
+}
+
+@mixin heroText {
+    line-height: 1.5rem;
+    color: $colorText;
+}
+
+@mixin Hero {
+    background: $colorHero;
+    @extend .p-3rem;
+}
+
+@mixin logo {
+    font-size: $fontLogo;
+    color: $colorLogo;
+    font-weight: bold;
+}
+
+@mixin grid ($justify-content: flex-start, $flex-wrap: wrap, $align-items: normal) {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: $justify-content;
+    flex-wrap: $flex-wrap;
+    align-items: $align-items;
+}
+
+

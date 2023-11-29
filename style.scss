@@ -1,0 +1,72 @@
+@import "spaziature";
+@import "font";
+@import "mixins";
+@import "bottoni";
+
+
+body {
+    font-family: $fontFamily;
+}
+
+header {
+    width: 100%;
+    @include Hero;
+    @include grid(space-between, nowrap, center);
+}
+
+#logo {
+    @include logo;
+}
+
+nav ul {
+    @include grid()
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul li {
+    @include navItem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+section:first-child {
+    @include Hero;
+    @include grid(space-between, nowrap);
+    img {
+        width: 50%;
+    }
+
+    h1 {
+        @include titleBigger;
+    }
+
+    p {
+        @include heroText;
+    }
+}
+
+#btn1 {
+    @include bottone1;
+}
+
+#btn2 {
+    @include bottone2;
+}
+
+#btn3 {
+    @include bottone3;
+}
+
+section:last-child {
+    @include grid (space-between, nowrap);
+    @extend .p-2rem;
+
+    img {
+        width: 20%;
+        margin-right: 1rem;
+    }
+}

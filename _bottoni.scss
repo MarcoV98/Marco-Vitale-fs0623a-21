@@ -1,0 +1,26 @@
+@import "spaziature";
+@import "colori";
+
+@mixin bottone {
+    border-radius: 5%;
+    @extend .p-1rem;
+    margin-left: 10px;
+    margin-top: 1rem;
+    color: $colorText;
+}
+
+@mixin bottone1 {
+    @include bottone;
+    background: $colorBut1;
+}
+
+@mixin bottone2 {
+    @include bottone;
+    background: $colorBut2;
+}
+
+@mixin bottone3 {
+    @include bottone;
+    background: $colorBut3;
+}
+

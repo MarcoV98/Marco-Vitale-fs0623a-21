@@ -1,0 +1,15 @@
+$paddingVal: (1rem, 2rem, 3rem, 4rem, 5rem, 6rem);
+$marginVal: (1rem, 2rem, 3rem, 4rem, 5rem, 6rem);
+
+@each $value in $paddingVal {
+    .p-#{$value} {
+        padding: $value;
+    }
+}
+
+@each $value in $marginVal {
+    .m-#{$value} {
+        margin: $value;
+    }
+}
+
